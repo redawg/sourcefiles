@@ -1,10 +1,9 @@
-127.0.0.1   localhost localhost.localdomain localhost4 localhost
-::1         localhost localhost.localdomain localhost6 localhost
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
 
-172.16.1.26  mainansible.theschoenfelds.dom  mainansible
-172.16.1.4  srv1.theschoenfelds.dom  srv1
-172.16.1.5  srv2.theschoenfelds.dom  srv2
-172.16.1.6  srv3.theschoenfelds.dom  srv3
-172.16.1.25 ansiblerhel8.theschoenfelds.dom
-172.16.1.27 demoapp.theschoenfelds.dom
-172.16.1.28 demodb.theschoenfelds.dom
+172.16.1.20 pah pah.theschoenfelds.dom
+172.16.1.21 psc psc.theschoenfelds.dom
+172.16.1.24 aap aap.theschoenfelds.dom
+172.16.1.23 exn1 exn1.theschoenfelds.dom
+172.16.1.27 webserver
+172.16.1.28 dbserver
