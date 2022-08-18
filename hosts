@@ -6,5 +6,5 @@
 172.16.1.22 asc asc.theschoenfelds.dom
 172.16.1.24 aap aap.theschoenfelds.dom
 172.16.1.23 exn1 exn1.theschoenfelds.dom
-172.16.1.27 webserver
-172.16.1.28 dbserver
+172.16.1.27 webserver webserver.theschoenfelds.dom
+172.16.1.28 dbserver dbserver.theschoenfelds.dom
