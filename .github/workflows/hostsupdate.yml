@@ -10,7 +10,7 @@ jobs:
        uses: fitbeard/action-trigger-awx@v22.7.0
        with:
          tower_url: ${{ secrets.ANSIBLEURL }}
-         tower_token: "{\"Authorization\": \"Bearer ${{ secrets.ANSIBLEKEY}}\"}"
+         tower_token: ${{ secrets.ANSIBLEKEY}}
          tower_verify_ssl: false
          resource_type: job_template
          resource_name: 98
