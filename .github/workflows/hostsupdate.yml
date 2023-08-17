@@ -1,0 +1,10 @@
+workflow "Checkfile Workflow" {
+ on = "push"
+ resolves = ["Call httpbin"]
+}
+
+action "Call httpbin" {
+ uses = "swinton/httpie.action@master"
+ args = ["POST", "https://redprim.mooo.com/api/v2/job_templates/98/launch/", "--auth=$USER_PASSWORD"]
+ secrets = ["USER_PASSWORD"]
+}
