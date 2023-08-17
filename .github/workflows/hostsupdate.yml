@@ -5,10 +5,12 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-uses: dkershner6/post-api-call-action@v1
-with:
-  url: ${{ ansibleurl }}
-  headers: "{\"Authorization\": \"Bearer ${{ ansiblekey}}\"}"
+    steps:
+       - name: Call Controller to start Job
+         uses: dkershner6/post-api-call-action@v1
+         with:
+           url: ${{ ansibleurl }}
+           headers: "{\"Authorization\": \"Bearer ${{ ansiblekey}}\"}"
   
 
 
