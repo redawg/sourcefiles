@@ -1,10 +1,11 @@
-workflow "Checkfile Workflow" {
- on = "push"
- resolves = ["Call httpbin"]
-}
-
-action "Call httpbin" {
- uses = "swinton/httpie.action@master"
- args = ["POST", "https://redprim.mooo.com/api/v2/job_templates/98/launch/", "--auth=$USER_PASSWORD"]
- secrets = ["USER_PASSWORD"]
-}
+uses: vortegon/github-action-ansible-tower@v1
+with:
+  ansible-tower-user: ${{ secrets.ansibleUser }}
+  ansible-tower-pass: ${{ secrets.ansiblePass }}
+  ansible-tower-url: ${{ secrets.ansibleUrl }}
+  template-id: "98"
+  additional-vars: |
+  {
+      "var_azure_rm_subid": "${{ secrets.azureSubscription }}",
+    }
+  
