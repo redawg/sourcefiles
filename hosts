@@ -1,6 +1,8 @@
 127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
 ::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
-1.1.1.1  test
+
+
+
 172.16.1.20 pah pah.theschoenfelds.dom
 172.16.1.21 sso sso.theschoenfelds.dom
 172.16.1.22 asc asc.theschoenfelds.dom
