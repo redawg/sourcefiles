@@ -12,7 +12,7 @@ jobs:
          tower_url: ${{ secrets.ANSIBLEURL }}
          tower_token: "{\"Authorization\": \"Bearer ${{ secrets.ANSIBLEKEY}}\"}"
          resource_type: job_template
-         resource_name: actions-awxkit-test
+         resource_name: 98
 
 
 
