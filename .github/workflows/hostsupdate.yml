@@ -11,6 +11,7 @@ jobs:
        with:
          tower_url: ${{ secrets.ANSIBLEURL }}
          tower_token: "{\"Authorization\": \"Bearer ${{ secrets.ANSIBLEKEY}}\"}"
+         tower_verify_ssl: false
          resource_type: job_template
          resource_name: 98
 
