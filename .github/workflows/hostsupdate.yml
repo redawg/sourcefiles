@@ -7,12 +7,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: Call Controller to start Job
-       uses: dkershner6/post-api-call-action@v1
+       uses: fitbeard/action-trigger-awx@v22.7.0
        with:
-         url: ${{ secrets.ANSIBLEURL }}
-         headers: "{\"Authorization\": \"Bearer ${{ secrets.ANSIBLEKEY}}\"}"
-  
-
+         tower_url: ${{ secrets.ANSIBLEURL }}
+         tower_token: "{\"Authorization\": \"Bearer ${{ secrets.ANSIBLEKEY}}\"}"
+         resource_type: job_template
+         resource_name: actions-awxkit-test
 
 
 
