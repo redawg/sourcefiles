@@ -14,6 +14,7 @@ jobs:
          tower_verify_ssl: false
          resource_type: job_template
          resource_name: 98
+         extra_vars: '{"file2comp": hosts}'
 
 
 
