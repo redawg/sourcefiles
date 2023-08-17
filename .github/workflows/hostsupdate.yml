@@ -4,8 +4,4 @@ with:
   ansible-tower-pass: ${{ ansiblePass }}
   ansible-tower-url: ${{ ansibleUrl }}
   template-id: "98"
-  additional-vars: |
-  {
-      "var_azure_rm_subid": "${{ azureSubscription }}",
-    }
   
