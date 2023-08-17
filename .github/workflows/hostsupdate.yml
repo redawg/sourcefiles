@@ -1,7 +1,9 @@
-uses: vortegon/github-action-ansible-tower@v1
+uses: dkershner6/post-api-call-action@v1
 with:
-  ansible-tower-user: ${{ ansibleUser }}
-  ansible-tower-pass: ${{ ansiblePass }}
-  ansible-tower-url: ${{ ansibleUrl }}
-  template-id: "98"
+  url: ${{ ansibleurl }}
+  headers: "{\"Authorization\": \"Bearer ${{ ansiblekey}}\"}"
   
+
+
+
+
