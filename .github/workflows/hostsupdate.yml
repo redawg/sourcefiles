@@ -13,7 +13,7 @@ jobs:
          tower_token: ${{ secrets.ANSIBLEKEY}}
          tower_verify_ssl: false
          resource_type: job_template
-         resource_name: 98
+         resource_name: RHEL-Diff_file_from_Git_on_target-NO_ APPLY
 
 
 
