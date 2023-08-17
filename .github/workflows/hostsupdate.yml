@@ -1,5 +1,5 @@
 on: 
- pull:
+ push
 
 uses: dkershner6/post-api-call-action@v1
 with:
