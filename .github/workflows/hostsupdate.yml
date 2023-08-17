@@ -9,8 +9,8 @@ jobs:
      - name: Call Controller to start Job
        uses: dkershner6/post-api-call-action@v1
        with:
-         url: ${{ ansibleurl }}
-         headers: "{\"Authorization\": \"Bearer ${{ ansiblekey}}\"}"
+         url: ${{ ANSIBLEURL }}
+         headers: "{\"Authorization\": \"Bearer ${{ ANSIBLEKEY}}\"}"
   
 
 
